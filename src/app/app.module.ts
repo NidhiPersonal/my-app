@@ -1,18 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Remove the incorrect imports for the components and modules
+import { RouterModule } from '@angular/router'; // Import RouterModule
+import { FormsModule } from '@angular/forms'; // Import the FormsModule
+import { BharatSchoolLibModule } from 'bharat-school-lib';
+import { AppRoutingModule } from './app-routing.module';
+
+
+// import { BharatSchoolLibModule } from 'bharat-school-lib'; // Import your library module
+// import { MyProfileButtonComponent } from 'bharat-school-lib'; // Import the component from your library
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    BharatSchoolLibModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
