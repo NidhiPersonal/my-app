@@ -32,13 +32,18 @@
                 "glob": "**/*",
                 "input": "./node_modules/bharat-school-lib/assets/img",
                 "output": "./assets/img/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/bharat-school-lib/assets/js",
+                "output": "./assets/js/"
               }
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": [
-            ]
+                                           ]
           },
           "configurations": {
             "production": {
